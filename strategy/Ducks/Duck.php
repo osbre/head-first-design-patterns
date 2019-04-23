@@ -19,7 +19,7 @@ class Duck
 
     public function swim()
     {
-        echo "Duck can swim! **splash of water**";
+        echo 'Duck can swim! **splash of water**';
     }
 
     public function display()

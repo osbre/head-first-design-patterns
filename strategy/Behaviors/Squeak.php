@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Strategy\Behaviors;
-
 
 use Strategy\Interfaces\QuackBehavior;
 
