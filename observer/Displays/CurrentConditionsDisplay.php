@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Observer\Displays;
-
 
 use Observer\Interfaces\DisplayElement;
 use Observer\Interfaces\Observer;

@@ -8,19 +8,19 @@ use Observer\Interfaces\Subject;
 class WeatherData implements Subject
 {
     /**
-     * @var array $observers
+     * @var array
      */
     private $observers = [];
     /**
-     * @var float $temperature
+     * @var float
      */
     private $temperature;
     /**
-     * @var float $humidity
+     * @var float
      */
     private $humidity;
     /**
-     * @var float $pressure
+     * @var float
      */
     private $pressure;
 
@@ -31,9 +31,9 @@ class WeatherData implements Subject
 
     public function removeObserver(Observer $observer)
     {
-        foreach ($this->observers as $key => $currentobserver){
-            if ($currentobserver === $observer){
-                array_splice( $this->observers, $key);
+        foreach ($this->observers as $key => $currentobserver) {
+            if ($currentobserver === $observer) {
+                array_splice($this->observers, $key);
                 break;
             }
         }
@@ -41,7 +41,7 @@ class WeatherData implements Subject
 
     public function notifyObservers()
     {
-        foreach ($this->observers as $observer){
+        foreach ($this->observers as $observer) {
             $observer->update($this->temperature, $this->humidity, $this->pressure);
         }
     }

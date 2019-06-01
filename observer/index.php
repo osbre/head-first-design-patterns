@@ -2,12 +2,12 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Observer\WeatherData;
 use Observer\Displays\{
     CurrentConditionsDisplay
 };
+use Observer\WeatherData;
 
-$weatherData = new WeatherData;
+$weatherData = new WeatherData();
 
 $currentDisplay = new CurrentConditionsDisplay($weatherData);
 
