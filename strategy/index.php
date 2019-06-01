@@ -2,18 +2,14 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Strategy\Ducks\{
-    MallardDuck,
-    DecoyDuck,
-    RubberDuck
-};
-use Strategy\Behaviors\{
-    FlyWithWings,
-    FlyNoWay,
-    Quack,
-    Squeak,
-    MuteQuack
-};
+use Strategy\Behaviors\FlyNoWay;
+use Strategy\Behaviors\FlyWithWings;
+use Strategy\Behaviors\MuteQuack;
+use Strategy\Behaviors\Quack;
+use Strategy\Behaviors\Squeak;
+use Strategy\Ducks\DecoyDuck;
+use Strategy\Ducks\MallardDuck;
+use Strategy\Ducks\RubberDuck;
 
 echo "Mallard duck: \n";
 
