@@ -1,6 +1,6 @@
 <?php
-require __DIR__.'/../vendor/autoload.php';
 
+require __DIR__.'/../vendor/autoload.php';
 
 use Strategy\Ducks\{
     MallardDuck,
@@ -12,7 +12,7 @@ use Strategy\Behaviors\{
     FlyNoWay,
     Quack,
     Squeak,
-    MuteQuack,
+    MuteQuack
 };
 
 echo "Mallard duck: \n";
